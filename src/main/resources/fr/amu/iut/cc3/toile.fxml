@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.Label?>
 <HBox id="scene" prefHeight="420.0" prefWidth="650.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
     <Pane prefHeight="400.0" prefWidth="400.0">
         <Circle centerX="200.0" centerY="200.0" radius="200.0" styleClass="toile" />
@@ -29,33 +28,35 @@
 
         <Pane fx:id="toile" styleClass="toile" />
     </Pane>
-   <VBox prefHeight="420.0" prefWidth="280" >
+   <VBox prefHeight="420.0" prefWidth="280">
        <GridPane>
            <columnConstraints>
-               <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="68.00000762939453"/>
-               <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.99999237060547" minWidth="10.0" prefWidth="241.99999237060547"/>
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.0" minWidth="10.0" prefWidth="121.0" />
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.99999237060547" minWidth="10.0" prefWidth="100.0" />
            </columnConstraints>
            <rowConstraints>
-               <RowConstraints maxHeight="13.999997615814209" minHeight="0.0" prefHeight="0.0"/>
-               <RowConstraints maxHeight="39.199999999999996" minHeight="10.0" prefHeight="33.40000190734863" vgrow="SOMETIMES"/>
-               <RowConstraints maxHeight="53.00000190734863" minHeight="10.0" prefHeight="32.19999809265136" vgrow="SOMETIMES"/>
-               <RowConstraints maxHeight="48.599999999999994" minHeight="10.0" prefHeight="28.799999999999997" vgrow="SOMETIMES"/>
+               <RowConstraints maxHeight="13.999997615814209" minHeight="0.0" prefHeight="0.0" />
+               <RowConstraints maxHeight="39.199999999999996" minHeight="10.0" prefHeight="33.40000190734863" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="53.00000190734863" minHeight="10.0" prefHeight="32.19999809265136" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="48.599999999999994" minHeight="10.0" prefHeight="28.799999999999997" vgrow="SOMETIMES" />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
            </rowConstraints>
            <children>
-               <TextField GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-               <TextField GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-               <TextField GridPane.columnIndex="1" GridPane.rowIndex="3"/>
-               <TextField GridPane.columnIndex="1" GridPane.rowIndex="4"/>
-               <TextField GridPane.columnIndex="1" GridPane.rowIndex="5"/>
-               <TextField GridPane.columnIndex="1" GridPane.rowIndex="6"/>
-               <Label text="Competence 1" GridPane.rowIndex="1"/>
-               <Label text="Competence 2" GridPane.rowIndex="2"/>
-               <Label text="Competence 3" GridPane.rowIndex="3"/>
-               <Label text="Competence 4" GridPane.rowIndex="1"/>
-               <Label text="Competence 5" GridPane.rowIndex="2"/>
-               <Label text="Competence 6" GridPane.rowIndex="3"/>
+               <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               <TextField prefHeight="24.0" prefWidth="183.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               <TextField GridPane.columnIndex="1" GridPane.rowIndex="6" />
+               <Label text="Competence 1" GridPane.rowIndex="1" />
+               <Label text="Competence 2" GridPane.rowIndex="2" />
+               <Label text="Competence 3" GridPane.rowIndex="3" />
+               <Label text="Competence 4" GridPane.rowIndex="4" />
+               <Label text="Competence 5" GridPane.rowIndex="5" />
+               <Label text="Competence 6" GridPane.rowIndex="6" />
            </children>
        </GridPane>
    </VBox>
 </HBox>
-
